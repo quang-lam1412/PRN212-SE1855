@@ -24,3 +24,6 @@ arr.XuatMang();
 arr.SapxepTangDan();
 Console.WriteLine("Mảng sau khi sấp xếp:");
 arr.XuatMang();
+
+
+//k
