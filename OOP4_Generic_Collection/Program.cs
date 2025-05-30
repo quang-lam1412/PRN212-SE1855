@@ -58,9 +58,9 @@ employees.ForEach(e =>
     Console.WriteLine(e);
 });
 Console.WriteLine("Danh sách nhân sự ===> cách 2");
-foreach (var emp in employees)
+foreach (var employee in employees)
 {
-    Console.WriteLine(emp);
+    Console.WriteLine(employee);
 }
 //câu 3 lọc ra nhân sự chính thức và tính tổng lương
 //cách 1: dùng các extension method của hệ thống 
@@ -107,3 +107,107 @@ employees.ForEach(e =>
     Console.WriteLine(e);
 });
 //sửa và xóa
+Console.OutputEncoding = Encoding.UTF8;
+//Câu 4 : R-> sấp xếp danh sách nhân sự theo ngày tháng năm sinh
+#region Sort employees by birth date
+for (int i = 0; i < employees.Count; i++)
+{
+    for (int j = i + 1; j < employees.Count; j++)
+    {
+        Employee ei = employees[i];
+        Employee ej = employees[j];
+        if (ei.Birthday > ej.Birthday)
+        {
+            employees[i] = ej;
+            employees[j] = ei;
+             
+        }
+    }
+}
+Console.WriteLine("Danh sách nhân sự sắp xếp theo ngày tháng năm sinh:");
+employees.ForEach(e => Console.WriteLine(e));
+#endregion
+// bổ sung sửa và xóa
+Console.OutputEncoding = Encoding.UTF8;
+// Câu 5: U - Update -> chỉnh sửa thông tin nhân sự
+#region Update employee
+int id;
+Employee? emp = null;  
+do
+{
+    Console.WriteLine("Nhập Id nhân sự cần chỉnh sửa:");
+    if (!int.TryParse(Console.ReadLine(), out id) || id < 1 || id > employees.Count)
+    {
+        Console.WriteLine("Id không hợp lệ, vui lòng nhập lại!");
+        continue;
+    }
+
+
+
+} while (id < 1 || id > employees.Count);
+
+foreach (var e in employees)
+{
+    if (e.Id == id)  
+    {
+        emp = e;  
+        break;    
+    }
+}
+
+if (emp != null)
+{
+    Console.WriteLine("Nhập tên mới cho nhân sự: ");
+    emp.Name = Console.ReadLine();
+    Console.WriteLine("Nhập IdCard mới cho nhân sự: ");
+    emp.IdCard = Console.ReadLine();
+    Console.WriteLine("Nhập ngày tháng năm sinh mới cho nhân sự (dd/MM/yyyy): ");
+    emp.Birthday = DateTime.ParseExact(Console.ReadLine(), "d/M/yyyy", null);
+    Console.WriteLine("Thông tin của Nhân sự sau khi được chỉnh sửa: ");
+    Console.WriteLine(emp);
+}
+else
+{
+    Console.WriteLine($"Không tìm thấy nhân sự với Id {id} đã nhập.");
+}
+Console.WriteLine("Danh sách nhân sự sau khi chỉnh sửa:");
+employees.ForEach(e => Console.WriteLine(e));
+#endregion
+// Câu 6: D - Delete -> Xóa nhân sự
+#region Delete employee
+
+
+do
+{
+    Console.WriteLine("Nhập Id nhân sự cần xóa:");
+    if (!int.TryParse(Console.ReadLine(), out id) || id < 1 || id > employees.Count)
+    {
+        Console.WriteLine("Id không hợp lệ, vui lòng nhập lại!");
+        continue;
+    }
+
+
+
+} while (id < 1 || id > employees.Count);
+
+emp = null;
+foreach (var e in employees)
+{
+    if (e.Id == id)
+    {
+        emp = e;
+        break;
+    }
+}
+if (emp != null)
+{
+    employees.Remove(emp);
+    Console.WriteLine($"Đã xóa nhân sự với Id {id}.");
+}
+else
+{
+    Console.WriteLine($"Không tìm thấy nhân sự với Id {id} đã nhập.");
+}
+Console.WriteLine("Danh sách nhân sự sau khi xóa:");
+employees.ForEach(e => Console.WriteLine(e));
+#endregion
