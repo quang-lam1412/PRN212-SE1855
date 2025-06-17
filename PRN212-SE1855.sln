@@ -73,6 +73,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWPF", "HelloWPF\HelloW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ButtonControl_TongHop", "ButtonControl_TongHop\ButtonControl_TongHop.csproj", "{3197AF15-92A1-447A-8730-58A9B7219F46}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckBoxControlEvent", "CheckBoxControlEvent\CheckBoxControlEvent.csproj", "{250D953E-BA3F-4617-8B74-01DF87DB9875}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadioButtonControl", "RadioButtonControl\RadioButtonControl.csproj", "{C3E7E727-25A0-4A0B-AF6E-1245E32B1949}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -207,6 +211,14 @@ Global
 		{3197AF15-92A1-447A-8730-58A9B7219F46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3197AF15-92A1-447A-8730-58A9B7219F46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3197AF15-92A1-447A-8730-58A9B7219F46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{250D953E-BA3F-4617-8B74-01DF87DB9875}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{250D953E-BA3F-4617-8B74-01DF87DB9875}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{250D953E-BA3F-4617-8B74-01DF87DB9875}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{250D953E-BA3F-4617-8B74-01DF87DB9875}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3E7E727-25A0-4A0B-AF6E-1245E32B1949}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3E7E727-25A0-4A0B-AF6E-1245E32B1949}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3E7E727-25A0-4A0B-AF6E-1245E32B1949}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3E7E727-25A0-4A0B-AF6E-1245E32B1949}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -225,6 +237,8 @@ Global
 		{CC8336C8-E155-4465-B07E-D307FCBE9AF9} = {8F88EA8B-A5D3-4579-9A13-E69E1535EA0B}
 		{E8E8D7F8-5C6A-49D5-BDE2-15D7CF03D5F4} = {7D25B506-EDDD-429C-BAA5-7DA778B6E44D}
 		{3197AF15-92A1-447A-8730-58A9B7219F46} = {7D25B506-EDDD-429C-BAA5-7DA778B6E44D}
+		{250D953E-BA3F-4617-8B74-01DF87DB9875} = {7D25B506-EDDD-429C-BAA5-7DA778B6E44D}
+		{C3E7E727-25A0-4A0B-AF6E-1245E32B1949} = {7D25B506-EDDD-429C-BAA5-7DA778B6E44D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {18D71280-41D1-4648-9AFA-6177FC461533}
