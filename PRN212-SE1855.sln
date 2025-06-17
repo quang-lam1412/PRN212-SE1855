@@ -77,6 +77,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckBoxControlEvent", "Che
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadioButtonControl", "RadioButtonControl\RadioButtonControl.csproj", "{C3E7E727-25A0-4A0B-AF6E-1245E32B1949}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListWPF", "ListWPF\ListWPF.csproj", "{4A17DD81-4485-42EB-BAD8-95899D37D634}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -219,6 +221,10 @@ Global
 		{C3E7E727-25A0-4A0B-AF6E-1245E32B1949}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3E7E727-25A0-4A0B-AF6E-1245E32B1949}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3E7E727-25A0-4A0B-AF6E-1245E32B1949}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A17DD81-4485-42EB-BAD8-95899D37D634}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A17DD81-4485-42EB-BAD8-95899D37D634}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A17DD81-4485-42EB-BAD8-95899D37D634}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A17DD81-4485-42EB-BAD8-95899D37D634}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -239,6 +245,7 @@ Global
 		{3197AF15-92A1-447A-8730-58A9B7219F46} = {7D25B506-EDDD-429C-BAA5-7DA778B6E44D}
 		{250D953E-BA3F-4617-8B74-01DF87DB9875} = {7D25B506-EDDD-429C-BAA5-7DA778B6E44D}
 		{C3E7E727-25A0-4A0B-AF6E-1245E32B1949} = {7D25B506-EDDD-429C-BAA5-7DA778B6E44D}
+		{4A17DD81-4485-42EB-BAD8-95899D37D634} = {7D25B506-EDDD-429C-BAA5-7DA778B6E44D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {18D71280-41D1-4648-9AFA-6177FC461533}
